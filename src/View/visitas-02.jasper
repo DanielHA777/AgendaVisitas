@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="visitas" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="cc9d39f2-fd29-4f8f-a76d-82d9fbe8420d">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w1" value="479"/>
+	<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w2" value="521"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="MySQL UDEMY Data Adapter"/>
+	<parameter name="BuscaData" class="java.lang.String"/>
+	<parameter name="BuscaDia" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT visitas.visitas.id,
+	visitas.visitas.visitante1,
+	visitas.visitas.visitante2,
+	visitas.visitas.visitante3,
+	visitas.visitas.visitante4,
+	visitas.visitas.data,
+	visitas.visitas.`nomeResi` ,
+	visitas.visitas.meses, visitas.visitas.dia 
+FROM visitas.visitas WHERE visitas.visitas.meses    LIKE  $P{BuscaData} and visitas.visitas.dia like  $P{BuscaDia}]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id"/>
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="visitas"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="visitante1" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="visitante1"/>
+		<property name="com.jaspersoft.studio.field.label" value="visitante1"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="visitas"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="visitante2" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="visitante2"/>
+		<property name="com.jaspersoft.studio.field.label" value="visitante2"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="visitas"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="visitante3" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="visitante3"/>
+		<property name="com.jaspersoft.studio.field.label" value="visitante3"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="visitas"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="visitante4" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="visitante4"/>
+		<property name="com.jaspersoft.studio.field.label" value="visitante4"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="visitas"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="data" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="data"/>
+		<property name="com.jaspersoft.studio.field.label" value="data"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="visitas"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nomeResi" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nomeResi"/>
+		<property name="com.jaspersoft.studio.field.label" value="nomeResi"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="visitas"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="meses" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="meses"/>
+		<property name="com.jaspersoft.studio.field.label" value="meses"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="visitas"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dia" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="dia"/>
+		<property name="com.jaspersoft.studio.field.label" value="dia"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="visitas"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<group name="id">
+		<groupExpression><![CDATA[$F{id}]]></groupExpression>
+	</group>
+	<group name="visitante1">
+		<groupExpression><![CDATA[$F{visitante1}]]></groupExpression>
+	</group>
+	<group name="visitante2">
+		<groupExpression><![CDATA[$F{visitante2}]]></groupExpression>
+	</group>
+	<group name="visitante3">
+		<groupExpression><![CDATA[$F{visitante3}]]></groupExpression>
+	</group>
+	<group name="visitante4">
+		<groupExpression><![CDATA[$F{visitante4}]]></groupExpression>
+	</group>
+	<group name="data">
+		<groupExpression><![CDATA[$F{data}]]></groupExpression>
+	</group>
+	<group name="nomeResi">
+		<groupExpression><![CDATA[$F{nomeResi}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="95" splitType="Stretch">
+			<staticText>
+				<reportElement x="260" y="65" width="233" height="30" forecolor="#FF0400" backcolor="#FF0400" uuid="2341ddf8-4bf0-49ba-b646-7be2f9f55d7a"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Black" size="20"/>
+				</textElement>
+				<text><![CDATA[Relatório de Visitas ]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="46" splitType="Stretch">
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="310" y="10" width="249" height="30" uuid="5c47576c-1742-4725-bbac-23bc31f6345a"/>
+				<textElement textAlignment="Right">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="44" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="52" height="30" forecolor="#FFFFFF" backcolor="#000000" uuid="996e9f1e-ef3b-4e34-a9b9-327baa02b978">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="db5af869-d20b-4e8e-babe-89ad51df6675"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="152" y="0" width="100" height="30" forecolor="#FFFFFF" backcolor="#000000" uuid="5f15366c-f890-4f2b-8d4b-bd5518c5b659">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="919e175a-11ac-4c31-bfa3-83d99ecd483a"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Visitante 1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="252" y="0" width="100" height="30" forecolor="#FFFFFF" backcolor="#000000" uuid="dd390c73-75b4-47f9-b4b3-a98f157ce13b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="05401493-ff26-44e7-924e-9ca2d8c9146c"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Visitante 2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="52" y="0" width="100" height="30" forecolor="#FFFFFF" backcolor="#000000" uuid="fc4c6665-1d7b-4b75-a922-321e83bd7625">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fe8231e7-708f-4ec4-a36b-a23de2e955aa"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Residente]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="352" y="0" width="198" height="30" forecolor="#FFFFFF" backcolor="#000000" uuid="1237899c-e1ff-4fdf-9b0a-6553aa930ebf">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1f7c4321-1cf8-440a-919e-58eafd8df5f4"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Data]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="56" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="20" width="52" height="30" uuid="b99545a0-40c9-4bca-87c5-a96283bf1674">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="db5af869-d20b-4e8e-babe-89ad51df6675"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="152" y="20" width="100" height="30" uuid="d7f3e7b4-c37e-4cb1-b969-bd99ab052f37">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="919e175a-11ac-4c31-bfa3-83d99ecd483a"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{visitante1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="252" y="20" width="100" height="30" uuid="09767420-2bba-4b3a-8388-e9b0b022ba58">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="05401493-ff26-44e7-924e-9ca2d8c9146c"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{visitante2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="52" y="20" width="100" height="30" uuid="65807f06-09ce-475f-9756-ff5b9c400627">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fe8231e7-708f-4ec4-a36b-a23de2e955aa"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{nomeResi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="352" y="20" width="198" height="30" uuid="751720f5-7490-4f7a-9d17-ffd46d6d048d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1f7c4321-1cf8-440a-919e-58eafd8df5f4"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{data}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="59" splitType="Stretch">
+			<textField>
+				<reportElement x="465" y="29" width="100" height="30" uuid="1a7e31e4-9b34-4327-898f-72d457b42653"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

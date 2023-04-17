@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/sistvila/libs/jasperreports-6.15.0.jar"/>
+	<classpathentry kind="lib" path="/sistvila/libs/mysql-connector-java-5.1.49.jar"/>
+	<classpathentry kind="lib" path="src/libs/commons-beanutils-1.9.4.jar"/>
+	<classpathentry kind="lib" path="src/libs/commons-collections4-4.2.jar"/>
+	<classpathentry kind="lib" path="src/libs/commons-digester-2.1.jar"/>
+	<classpathentry kind="lib" path="src/libs/commons-email-1.3.1.jar"/>
+	<classpathentry kind="lib" path="src/libs/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="src/libs/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="src/libs/jgoodies-common-1.8.0.jar"/>
+	<classpathentry kind="lib" path="src/libs/jgoodies-common-1.8.0-sources.jar"/>
+	<classpathentry kind="lib" path="src/libs/jgoodies-forms-1.8.0.jar"/>
+	<classpathentry kind="lib" path="src/libs/jgoodies-forms-1.8.0-sources.jar"/>
+	<classpathentry kind="lib" path="src/libs/forms-7.1.3.jar"/>
+	<classpathentry kind="lib" path="src/libs/forms-7.1.3-javadoc.jar"/>
+	<classpathentry kind="lib" path="src/libs/forms-7.1.3-sources.jar"/>
+	<classpathentry kind="lib" path="src/libs/io-7.1.3.jar"/>
+	<classpathentry kind="lib" path="src/libs/io-7.1.3-javadoc.jar"/>
+	<classpathentry kind="lib" path="src/libs/io-7.1.3-sources.jar"/>
+	<classpathentry kind="lib" path="src/libs/layout-7.1.3.jar"/>
+	<classpathentry kind="lib" path="src/libs/layout-7.1.3-javadoc.jar"/>
+	<classpathentry kind="lib" path="src/libs/layout-7.1.3-sources.jar"/>
+	<classpathentry kind="lib" path="src/libs/pdfa-7.1.3.jar"/>
+	<classpathentry kind="lib" path="src/libs/pdfa-7.1.3-javadoc.jar"/>
+	<classpathentry kind="lib" path="src/libs/pdfa-7.1.3-sources.jar"/>
+	<classpathentry kind="lib" path="src/libs/pdftest-7.1.3.jar"/>
+	<classpathentry kind="lib" path="src/libs/pdftest-7.1.3-javadoc.jar"/>
+	<classpathentry kind="lib" path="src/libs/pdftest-7.1.3-sources.jar"/>
+	<classpathentry kind="lib" path="src/libs/sign-7.1.3.jar"/>
+	<classpathentry kind="lib" path="src/libs/sign-7.1.3-javadoc.jar"/>
+	<classpathentry kind="lib" path="src/libs/sign-7.1.3-sources.jar"/>
+	<classpathentry kind="lib" path="src/libs/svg-7.1.3.jar"/>
+	<classpathentry kind="lib" path="src/libs/svg-7.1.3-javadoc.jar"/>
+	<classpathentry kind="lib" path="src/libs/svg-7.1.3-sources.jar"/>
+	<classpathentry kind="lib" path="src/libs/com.lowagie.text-2.1.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/recepcao/Documents/Organizar/jcalendar-tz-1.3.3-4.jar"/>
+	<classpathentry kind="lib" path="src/libs/jcalendar-1.4.jar"/>
+	<classpathentry kind="lib" path="src/libs/jgoodies-common-1.2.0.jar"/>
+	<classpathentry kind="lib" path="src/libs/jgoodies-looks-2.4.1.jar"/>
+	<classpathentry kind="lib" path="src/libs/junit-4.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/recepcao/Documents/Organizar/jcalendar-1.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/recepcao/Documents/Organizar/jgoodies-common-1.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/recepcao/Documents/Organizar/jgoodies-looks-2.4.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/recepcao/Documents/Organizar/junit-4.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/recepcao/Documents/Daniel/jcalendar-1.4.jar"/>
+	<classpathentry kind="output" path="src"/>
+</classpath>
